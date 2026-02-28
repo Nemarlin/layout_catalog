@@ -4,7 +4,7 @@
   width: variables.$card-width;
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
-  padding: variables.$card_padding;
+  padding: variables.$card-padding;
   border: 1px solid variables.$color-border;
   border-radius: variables.$border-radius;
   background: variables.$white-color;
@@ -34,7 +34,7 @@
     max-width: variables.$image-max-width;
     height: variables.$image-height;
     width: 100%;
-    margin: 16px auto 40px;
+    margin: variables.$image-margin auto variables.$margin2-image;
   }
 
   &__code {
