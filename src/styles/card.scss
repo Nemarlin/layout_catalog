@@ -4,9 +4,9 @@
   width: variables.$card-width;
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
-  padding: 16px;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  padding: variables.$card_padding;
+  border: 1px solid variables.$color-border;
+  border-radius: variables.$border-radius;
   background: variables.$white-color;
 
   transition: transform variables.$transition-duration ease;
@@ -31,8 +31,8 @@
 
   &__image {
     display: block;
-    max-width: 160px;
-    height: 134px;
+    max-width: variables.$image-max-width;
+    height: variables.$image-height;
     width: 100%;
     margin: 16px auto 40px;
   }
@@ -42,14 +42,14 @@
     font-size: 10px;
     line-height: 14px;
     color: variables.$secondary-color;
-    margin-top: 4px;
+    margin-top: variables.$code-margin-top;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 18px;
+    height: variables.$price-height;
 
     &-label {
       font-weight: 400;
@@ -71,7 +71,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: variables.$white-color;
-    margin-top: 16px;
+    margin-top: variables.$button-margin-top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@
     line-height: 16px;
     text-transform: uppercase;
     background-color: variables.$blue-color;
-    border-radius: 5px;
+    border-radius: variables.$border-radius;
     width: variables.$button-width;
     height: variables.$button-height;
 
@@ -98,7 +98,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 16px 0 24px;
-    height: 16px;
+    height: variables.$testimonials-height;
   }
 
   &__review {
